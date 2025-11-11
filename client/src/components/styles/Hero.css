@@ -1,0 +1,68 @@
+
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/lady.jpeg');
+    background-position: center center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    color: white; 
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(7, 6, 6, 0.4);
+    z-index: 1; 
+}
+
+.hero-section > * {
+    z-index: 2;
+    position: relative;
+}
+
+
+.hero-heading{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    border-bottom: 2px solid rgb(223, 69, 69);
+    padding: 2rem;
+    padding-bottom: .6rem;
+}
+
+.hero-par{
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 3rem;
+    margin-top: 20px;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.hero-btn{
+    font-family: "Stack Sans Headline", sans-serif;
+    background-color: #e64b38;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
