@@ -50,15 +50,19 @@ const Services = () => {
     return(
     <>
     <section className="services-section">
-        <h2 className="services-header">SOME OF THE THINGS WE OFFER</h2>
-        <h2 className="services-heading">Our Services</h2>
-        {cards.map(({id, icon, title, description}) => (
+        <div className="services-header-wrapper">
+            <h2 className="services-header">SOME OF THE THINGS WE OFFER</h2>
+            <h2 className="services-heading">Our Services</h2>
+        </div>
+        <div className="services-grid">
+            {cards.map(({id, icon, title, description}) => (
             <div key={id} className="service-card">
                 <div className="card-icon">{icon}</div>
                 <h2 className="card-title">{title}</h2>
                 <p className="card-description">{description}</p>
             </div>
         ))}
+        </div>
     </section>
     </>
 )
