@@ -1,0 +1,75 @@
+.services-section {
+  background-color: rgb(248, 246, 246);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  min-height: 50vh;
+}
+
+.service-card {
+  width: 300px; 
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  background-color: rgb(231, 97, 49);
+  color: white;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(231, 97, 49, 0.3);
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(248, 246, 246);
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .card-icon {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.card-icon img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #333;
+  transition: color 0.5s;
+}
+
+.service-card:hover .card-title {
+  color: white;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  transition: color 0.5s;
+}
+
+.service-card:hover .card-description {
+  color: #fefefe;
+}
